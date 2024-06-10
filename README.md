@@ -1,2 +1,2 @@
-# Sudoku
-😏😏😏
+# StonePaperScissor
+🐧✨

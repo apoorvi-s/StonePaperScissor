@@ -1,0 +1,27 @@
+.choices
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+.choice
+{
+    width: 200px;
+    height: 200px;
+    border: 2px solid purple;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+}
+.user, .computer
+{
+    border: 1px solid purple;
+}
+h1
+{
+    font-family: Copperplate, Papyrus, fantasy;
+    text-align: center;
+}

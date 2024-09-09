@@ -1,27 +1,47 @@
 .choices
 {
+    border-top: 1px solid purple;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
     justify-items: center;
     justify-content: center;
+    background-color: rgb(243, 223, 243);
 }
 .choice
 {
     width: 200px;
     height: 200px;
-    border: 2px solid purple;
+    border: 2px solid white;
     border-radius: 50%;
     padding: 5px;
     margin: 5px;
 }
+.choice:hover
+{
+    opacity: 0.8;
+    cursor: pointer;
+    border-color: purple;
+}
 .user, .computer
 {
-    border: 1px solid purple;
+    border: 2px solid purple;
+    background-color: rgb(215, 232, 236);
+    text-align: center;
 }
 h1
 {
     font-family: Copperplate, Papyrus, fantasy;
     text-align: center;
+    padding: 10px;
+    margin: auto;
+}
+h2
+{
+    font-family: Copperplate, Papyrus, fantasy;
+}
+body, html
+{
+    background-color: rgb(186, 231, 203);
 }

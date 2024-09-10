@@ -6,7 +6,6 @@ const choices = document.querySelectorAll(".choice");
 const userPara = document.querySelector("#user_score");
 const compPara = document.querySelector("#comp_score");
 
-
 const generateComputerChoice = () => {
     let options = ["rock","paper","scissor"];
     const randIdx = Math.floor(Math.random() * 3);

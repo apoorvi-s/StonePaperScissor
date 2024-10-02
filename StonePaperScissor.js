@@ -1,15 +1,19 @@
+//variables to updated scores.
 let userScore = 0;
 let compScore = 0;
 
+//to reflect choices.
 const userChoices = document.querySelectorAll(".choice");
 const compChoices = document.querySelectorAll(".comp_choice");
 
+//to reflect updated scores.
 const userPara = document.querySelector("#user_score");
 const compPara = document.querySelector("#comp_score");
 
+//to update the message box.
 const messageBox = document.querySelector("#msg");
 
-
+//to generate random computer choices.
 const generateComputerChoice = () => 
 {
     let options = ["rock", "paper", "scissor"];
@@ -17,32 +21,33 @@ const generateComputerChoice = () =>
     return options[randIdx];
 }
 
-
+//In case the game draws, what will be done?
 const drawGame = () => 
 {
     messageBox.innerText = "It's a draw!";
-    console.log("Draw game");
+    //console.log("Draw game");
 }
 
-
+//else, how to show the winner?
 const showWinner = (userWin) => 
 {
     if (userWin) 
     {
-        userScore++;
-        userPara.innerText = userScore;
-        messageBox.innerText = "User Wins!";
-        console.log("User wins");
+        userScore++; //update user score
+        userPara.innerText = userScore; //reflect score
+        messageBox.innerText = "User Wins!"; //reflect msg
+        //console.log("User wins");
     }
     else 
     {
-        compScore++;
-        compPara.innerText = compScore;
-        messageBox.innerText = "Computer Wins!";
-        console.log("Computer wins");
+        compScore++; //update computer score
+        compPara.innerText = compScore; //reflect score
+        messageBox.innerText = "Computer Wins!"; //reflect msg
+        //console.log("Computer wins");
     }
 }
 
+//since computer side's panel is not clickable, how its choices will be reflected?
 const highlightComputerChoice = (compChoice) => 
 {
     compChoices.forEach((compChoiceElement) => 
@@ -55,13 +60,14 @@ const highlightComputerChoice = (compChoice) =>
     });
 }
 
+
 const playGame = (userChoice) => 
 {
-    console.log("User choice: ", userChoice);
-    const compChoice = generateComputerChoice();
-    console.log("Computer choice: ", compChoice);
+    //console.log("User choice: ", userChoice);
+    const compChoice = generateComputerChoice(); //has computer's choice
+    //console.log("Computer choice: ", compChoice);
 
-    highlightComputerChoice(compChoice);
+    highlightComputerChoice(compChoice); //reflects computer's choice
 
     if (userChoice === compChoice) drawGame();
     else 

@@ -1,98 +1,96 @@
-.choices
+body, html 
 {
-    border-top: 1px solid purple;
+    background-color: rgb(34, 45, 50);
+}
+.heading 
+{
+    font-family: 'Copperplate', 'Papyrus', fantasy;
+    color: #f0db4f;
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 3rem;
+}
+.user, .computer 
+{
+    border: 2px solid #6a0dad;
+    background-color: rgb(55, 70, 79);
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+.user h2, .computer h2 
+{
+    color: #f0db4f;
+}
+.scores 
+{
+    font-size: larger;
+    font-weight: lighter;
+    color: white;
+}
+.choices, .Comp_choices 
+{
+    border-top: 1px solid #6a0dad;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    justify-items: center;
-    justify-content: center;
-    background-color: rgb(243, 223, 243);
+    background-color: rgb(75, 85, 99);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
 }
-.Comp_choices
+.choice, .comp_choice 
 {
-    border-top: 1px solid purple;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    justify-items: center;
-    justify-content: center;
-    background-color: rgb(243, 223, 243);
-}
-.choice
-{
-    width: 170px;
-    height: 170px;
-    border: 2px solid #ffff;
+    width: 150px;
+    height: 150px;
+    border: 2px solid white;
     border-radius: 50%;
     padding: 5px;
-    margin: 5px;
-    transition: all 0.5s ease;
-}
-.comp_choice
-{
-    width: 170px;
-    height: 170px;
-    border: 2px solid #ffff;
-    border-radius: 50%;
-    padding: 5px;
-    margin: 5px;
-    transition: all 0.5s ease;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
 }
 .choice:hover
 {
     opacity: 0.8;
     cursor: pointer;
-    border-color: purple;
+    border-color: #6a0dad;
 }
-.user, .computer
+.message 
 {
-    border: 2px solid purple;
-    background-color: rgb(215, 232, 236);
-    text-align: center;
-}
-.heading
-{
-    font-family: Copperplate, Papyrus, fantasy;
-    text-align: center;
-    padding: 10px;
-    margin: auto;
-}
-body, html
-{
-    background-color: rgb(186, 231, 203);
-}
-.message
-{
-    background-color: rgb(248, 242, 233);
-    border: 2px solid purple;
+    background-color: rgb(75, 85, 99);
+    color: white;
+    border: 2px solid #6a0dad;
     border-top: none;
     border-bottom: none;
     text-align: center;
-    font-size: large;
-
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-top: 20px;
 }
-.instructions
+.Remember 
 {
-    background-color: rgb(236, 210, 236);
-    border: 2px solid purple;
-    
-}
-.Remember
-{
-    background-color: rgb(248, 242, 233);
-    border: 2px solid purple;
+    background-color: rgb(55, 70, 79);
+    border: 2px solid #6a0dad;
     border-top: none;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.Remember h5 
+{
+    color: #f0db4f;
+}
+
+.Remember ul 
+{
+    color: white;
 }
 .highlight 
 {
     opacity: 0.8;
     cursor: pointer;
-    border-color: purple;
-}
-.scores
-{
-    font-size:larger;
-    font-weight:lighter;
+    border-color: #6a0dad;
 }
